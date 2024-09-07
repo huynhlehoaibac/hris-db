@@ -1,6 +1,11 @@
 # Getting Started
 
 ### Liquibase
+##### Generate a Changelog From an Existing Database
+```console
+➜  mvn liquibase:generateChangeLog -Denv=dev -Dliquibase.outputChangeLogFile=newChangeLog.sql
+```
+
 ##### create tag
 ```console
 ➜  mvn liquibase:tag -Dliquibase.tag=1.0 -Denv=dev
